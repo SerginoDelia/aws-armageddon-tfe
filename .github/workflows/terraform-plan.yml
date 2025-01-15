@@ -1,7 +1,11 @@
-name: 'Terraform Plan'
-on:
-  pull_request:
+name: "Terraform Plan"
 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    
 env:
   TF_CLOUD_ORGANIZATION: "Sergino"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
