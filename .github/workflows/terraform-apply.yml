@@ -1,4 +1,5 @@
 name: 'Terraform Apply'
+
 on:
   push:
     branches:
